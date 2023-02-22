@@ -27,6 +27,7 @@
 https://github.com/EkaterinaLaricheva/MNT-7/blob/MNT-7/08-ansible-02-playbook/README.md
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 https://github.com/EkaterinaLaricheva/MNT-7/tree/MNT-7/08-ansible-02-playbook/playbook2
+
 ---
 
 ### Как оформить ДЗ?
