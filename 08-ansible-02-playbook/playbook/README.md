@@ -1,3 +1,4 @@
+Playbook
 GROUP VARS
 
 clickhouse - имя пакета установки clickhouse
