@@ -24,10 +24,10 @@
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 ![img_4.png](img_4.png)
 9. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
-
+https://github.com/EkaterinaLaricheva/MNT-7/blob/08-ansible-02-playbook/08-ansible-02-playbook/playbook/README.md
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
-
+https://github.com/EkaterinaLaricheva/MNT-7/tree/08-ansible-02-playbook/08-ansible-02-playbook
 ---
 
 ### Как оформить ДЗ?
