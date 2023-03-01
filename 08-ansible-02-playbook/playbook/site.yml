@@ -22,7 +22,6 @@
     - name: Install clickhouse packages
       become: true
       ansible.builtin.yum:
-        disable_gpg_check: true
         name:
           - clickhouse-common-static-{{ clickhouse_version }}.rpm
           - clickhouse-client-{{ clickhouse_version }}.rpm
@@ -40,8 +39,16 @@
   hosts: vector
   tasks:
     - name: Create directory Vect
+      become_user: root
+      become: true
+      become_method: su
+      become_exe: sudo su
       ansible.builtin.file: path=/vect state=directory
     - name: Download Vector
+      become_user: root
+      become: true
+      become_method: su
+      become_exe: sudo su
       ansible.builtin.get_url:
         url: "https://packages.timber.io/vector/0.21.0/vector-0.21.0-1.x86_64.rpm"
         dest: "/vect"
@@ -49,6 +56,4 @@
     - name: Install Vector
       become: true
       ansible.builtin.yum:
-        disable_gpg_check: true
         name: "/vect/vector-0.21.0-1.x86_64.rpm"
-        tags: vector

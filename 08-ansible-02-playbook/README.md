@@ -18,13 +18,14 @@
 5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
 ![img_1.png](img_1.png)
 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
-![img_2.png](img_2.png)
+![img_8.png](img_8.png)
 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
-![img_3.png](img_3.png)
+![img_7.png](img_7.png)
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
-![img_4.png](img_4.png)
+![img_6.png](img_6.png)
 9. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
-https://github.com/EkaterinaLaricheva/MNT-7/blob/08-ansible-02-playbook/08-ansible-02-playbook/playbook/README.md
+
+
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
 https://github.com/EkaterinaLaricheva/MNT-7/tree/08-ansible-02-playbook/08-ansible-02-playbook
