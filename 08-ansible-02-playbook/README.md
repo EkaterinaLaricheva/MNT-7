@@ -25,7 +25,8 @@
 ![img_6.png](img_6.png)
 9. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
 
-https://github.com/EkaterinaLaricheva/MNT-7/blob/main/08-ansible-02-playbook/playbook/README.md
+ https://github.com/EkaterinaLaricheva/MNT-7/blob/main/08-ansible-02-playbook/playbook/README.md
+
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
 https://github.com/EkaterinaLaricheva/MNT-7/tree/main/08-ansible-02-playbook
