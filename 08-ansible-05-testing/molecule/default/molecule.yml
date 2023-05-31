@@ -1,0 +1,20 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint: |
+  ansible-lint .
+  yamllint .
+platforms:
+  - name: centos8
+    image: quay.io/centos/centos:stream8
+    pre_build_image: true
+  - name: centos7
+    image: docker.io/pycontribs/centos:7
+    pre_build_image: true
+provisioner:
+  name: ansible
+  playbooks:
+    converge: ../shared/converge.yml
+    verify: ../shared/verify.yml
