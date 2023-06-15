@@ -97,6 +97,8 @@ Finished: SUCCESS
 
 8. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
 Предполагаю, что скрипт будет таким
+
+
 node("linux"){
     stage("Git checkout"){
         git credentialsId: '7943d9ab-efa7-4520-b128-48f13295c4ae', url: 'https://github.com/aragastmatb/example-playbook.git'
