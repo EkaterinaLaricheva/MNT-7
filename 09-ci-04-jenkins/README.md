@@ -97,24 +97,7 @@ Finished: SUCCESS
 
 8. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
 Предполагаю, что скрипт будет таким
-
-
-node("linux"){
-    stage("Git checkout"){
-        git credentialsId: '7943d9ab-efa7-4520-b128-48f13295c4ae', url: 'https://github.com/aragastmatb/example-playbook.git'
-    }
-    
-    stage("Run playbook"){
-        if ( "${prod_run}" == "true" ){
-            sh 'ansible-playbook site.yml -i inventory/prod.yml'
-            
-        }
-        else{
-            sh 'ansible-playbook site.yml -i inventory/prod.yml --check --diff'
-        }
-        
-    }
-}
+https://github.com/EkaterinaLaricheva/MNT-7/blob/main/09-ci-04-jenkins/pipeline/ScriptedJenkinsfile
 9. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`. Цель: получить собранный стек ELK в Ya.Cloud.
 10. Отправить две ссылки на репозитории в ответе: с ролью и Declarative Pipeline и c плейбукой и Scripted Pipeline.
 https://github.com/EkaterinaLaricheva/Clickhouse-role
